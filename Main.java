@@ -2,20 +2,13 @@ import java.time.LocalDate;
 
 class Main {
     public static void main(String[] args) {
-      User user = new User();
 
-      user.name = "Jose";
-      user.birthDate = LocalDate.parse("2005-01-31");
+      Book lordoftherings = new Book("Lord of the Rings", "J.R.R. Tolkien", 437);
 
-      Book book = new Book();
+      AudioBook harrypotter = new AudioBook("Harry Potter", "JK Rowling", 30000);
 
-      book.title = "Lord of the Rings";
-      book.writer = "J.R.R. Tolkien";
+      Ebook diaryofwimpykid = new Ebook("Diary of a Wimpy Kid", "Jeff K", 144, "PDF");
 
-      user.borrow(book);
-
-      System.out.printf("%s was born in %s and he is now %d years old. \n", user.name, user.birthDate.toString(), user.age());
-
-      System.out.printf("%s has borrowed these books: %s \n", user.name, user.books.toString());
+      System.out.println(diaryofwimpykid.toString());
   }
 }

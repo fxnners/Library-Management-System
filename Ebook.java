@@ -6,5 +6,4 @@ public class Ebook extends Book {
 
     this.format = format;
   }
-  
 }
